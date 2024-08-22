@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <header class="header">
+        <img class="logo__alura" src="./assets/Logo.png" alt="logo de alura latam">
+    </header>
+    <main class="contenido">
+            <div class="container__contenido">
+                <div class="container__informacion">
+                    <div class="container__texto">
+                        <textarea name="textoUsuario" class="container__input" cols="80" rows="15" placeholder="Ingrese el texto aqui" id="textoUsuario" ></textarea>
+                            <div class="container__parrafo">
+                                <img class="informacion__usuario1" src="./assets/Frame 1.png" alt="solo puede ser minusculas">
+                            </div>
+                        <div class="container__botones">
+                            <button onclick="encriptarTexto()" class="container__botonE" id="encriptar" >Encriptar</button>
+                            <button onclick="desencriptarTexto()" class="container__botonD" id="desencriptar">Desencriptar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+        <div class="entrega__encriptada" id="entrega__encriptada">
+            <textarea name="textoEntregado" class="container__output" id="textoEntregado" disabled hidden readonly></textarea>
+                <div class="imagenes" id="imagenes">
+                    <img class="muñeco" src="./assets/Muñeco.png" alt="muñeco buscando texto" id="muñeco">
+                    <img class="informacion__usuario__texto2" src="./assets/Frame 5.png" alt="encriptar o desencriptar" id="informacionDos">
+                </div>
+            <button onclick="copiarTexto()" class="copiar__texto" id="copiar" disabled hidden >Copiar</button> 
+        </div>
+    </main>
+        <script src="app.js"></script>
+    <footer class="footer">
+        <p>Desarrollado por Gary Silva en el año 2024</p>
+    </footer>
+</body>
+</html>
